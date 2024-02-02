@@ -750,10 +750,7 @@ img {
   display: grid;
 }
 
-.logo {
-  width: 150px;
-  display: block;
-}
+
 
 #header .container {
   display: flex;
