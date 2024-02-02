@@ -15,12 +15,15 @@ const reducer = (state = initialState, action) => {
   const {type,payload,id} = action
   switch (type) {
     case ADD_BOOKING:
+      if(state.length >= 3){
+        return state;
+      }
       const lastBookId = copiedState[copiedState.length - 1]?.id
       const newBook = { ...payload, id: lastBookId ? (lastBookId + 1) : 1 }
       copiedState.push(newBook)
       return copiedState
       case DELETE_BOOKING:
-        const updatedState = copiedState.filter(item => item.id !== id)
+        const updatedState = state.filter(book => book.id !== id)
         return updatedState
     default:
       return state;

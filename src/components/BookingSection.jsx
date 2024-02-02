@@ -21,16 +21,17 @@ const BookingSection = () => {
 
 
      const formData = {
+        id: data.id,
         destinationFrom,
         destinationTo,
         journeyDate,
         guests,
         bookingClass: bClass
      }
-     console.log(formData)
+    //  console.log(formData)
      dispatch(addBooking(formData))
-     // form.reset()
-     console.log(data)
+     form.reset()
+  
     }
 
     
@@ -140,7 +141,7 @@ const BookingSection = () => {
                   </select>
                 </div>
               </div>
-              <button className="addCity" type="submit" id="lws-addCity">
+              <button disabled={data.length >= 3 ? true : false } className="addCity disabled:bg-gray-500 disabled:hover:shadow-none disabled:text-white" type="submit" id="lws-addCity">
                 <svg
                   width="15px"
                   height="15px"

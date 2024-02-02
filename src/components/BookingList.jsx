@@ -9,7 +9,9 @@ const BookingList = () => {
     console.log(books)
 
     const bookDeleteHandler = id=> {
+        console.log(id)
         dispatch(deleteBooking(id))
+
     }
     return (
         <>
@@ -47,7 +49,7 @@ const BookingList = () => {
                     <p className="lws-bookedGustes">{book.guests}</p>
                   </td>
                   <td className="px-6 py-4 text-center">
-                    <span className="lws-bookedClass"> {book.bookingClass} </span>
+                    <span className="lws-bookedClass"> {book.bookingClass } {book.id} </span>
                   </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex justify-center gap-4">

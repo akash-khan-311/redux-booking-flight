@@ -10,6 +10,6 @@ export const addBooking = (bookingData) => {
 export const deleteBooking = (bookingId) => {
   return {
     type: DELETE_BOOKING,
-    payload: bookingId,
+    id: bookingId,
   };
 };
