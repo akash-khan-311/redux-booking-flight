@@ -47,7 +47,7 @@ const BookingSection = () => {
               <div className="des-from">
                 <p>Destination From</p>
                 <div className="flex flex-row">
-                  <img src="/src/assets/images/icons/Frame.svg" alt />
+                  <img src="./src/assets/images/icons/Frame.svg" alt />
                   <select
                     className="outline-none px-2 py-2 w-full"
                     name="from"
@@ -69,7 +69,7 @@ const BookingSection = () => {
               <div className="des-from">
                 <p>Destination To</p>
                 <div className="flex flex-row">
-                  <img src="/src/assets/images/icons/Frame.svg" alt />
+                  <img src="./src/assets/images/icons/Frame.svg" alt />
                   <select
                   onChange={(e)=> setDto(e.target.value)}
                     className="outline-none px-2 py-2 w-full"
@@ -103,7 +103,7 @@ const BookingSection = () => {
               <div className="des-from">
                 <p>Guests</p>
                 <div className="flex flex-row">
-                  <img src="/src/assets/images/icons/Vector (1).svg" alt />
+                  <img src="./src/assets/images/icons/Vector (1).svg" alt />
                   <select
                     className="outline-none px-2 py-2 w-full"
                     name="guests"
@@ -125,7 +125,7 @@ const BookingSection = () => {
               <div className="des-from !border-r-0">
                 <p>Class</p>
                 <div className="flex flex-row">
-                  <img src="/src/assets/images/icons/Vector (3).svg" alt />
+                  <img src="./src/assets/images/icons/Vector (3).svg" alt />
                   <select
                     className="outline-none px-2 py-2 w-full"
                     name="ticketClass"
