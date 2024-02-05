@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { addBooking } from "../Redux/booking/action";
 import { useDispatch, useSelector } from "react-redux";
+import locationIcon from '../assets/images/icons/Frame.svg'
+import guestsIcon from '../assets/images/icons/Vector (1).svg'
+import classIcon from '../assets/images/icons/Vector (3).svg'
 
 /* eslint-disable react/no-unescaped-entities */
 const BookingSection = () => {
@@ -47,7 +50,7 @@ const BookingSection = () => {
               <div className="des-from">
                 <p>Destination From</p>
                 <div className="flex flex-row">
-                  <img src="./src/assets/images/icons/Frame.svg" alt />
+                  <img src={locationIcon} alt />
                   <select
                     className="outline-none px-2 py-2 w-full"
                     name="from"
@@ -69,7 +72,7 @@ const BookingSection = () => {
               <div className="des-from">
                 <p>Destination To</p>
                 <div className="flex flex-row">
-                  <img src="./src/assets/images/icons/Frame.svg" alt />
+                  <img src={locationIcon}alt />
                   <select
                   onChange={(e)=> setDto(e.target.value)}
                     className="outline-none px-2 py-2 w-full"
@@ -103,7 +106,7 @@ const BookingSection = () => {
               <div className="des-from">
                 <p>Guests</p>
                 <div className="flex flex-row">
-                  <img src="./src/assets/images/icons/Vector (1).svg" alt />
+                  <img src={guestsIcon} alt />
                   <select
                     className="outline-none px-2 py-2 w-full"
                     name="guests"
@@ -125,7 +128,7 @@ const BookingSection = () => {
               <div className="des-from !border-r-0">
                 <p>Class</p>
                 <div className="flex flex-row">
-                  <img src="./src/assets/images/icons/Vector (3).svg" alt />
+                  <img src={classIcon} alt />
                   <select
                     className="outline-none px-2 py-2 w-full"
                     name="ticketClass"
